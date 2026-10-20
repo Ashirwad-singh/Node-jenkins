@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'NodeJS-26'
+        nodejs 'NodeJs-26'
     }
 
     options {
@@ -64,7 +64,7 @@ pipeline {
         stage('Deploy') {
 
             when {
-                branch 'master'
+                branch 'main'
             }
 
             steps {
@@ -124,7 +124,7 @@ pipeline {
         stage('Smoke Test') {
 
             when {
-                branch 'master'
+                branch 'main'
             }
 
             steps {
