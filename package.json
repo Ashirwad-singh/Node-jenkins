@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "dev": "node src/server.js",
-    "start": "node src/server.js",
+    "start": "node dist/server.js",
     "lint": "eslint src tests",
     "test": "jest",
     "test:ci": "jest --ci --coverage --reporters=default --reporters=jest-junit",
